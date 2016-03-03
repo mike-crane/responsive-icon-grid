@@ -1,0 +1,88 @@
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica, Helvetica Neue, Arial;
+  font-size: 16px;
+}
+
+.grid-container {
+	margin-left: .25em;
+	margin-top: 10%;
+}
+
+.wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.box {
+  display: inline-block;
+  padding: 3em 7.5em;
+  background-color: rgb(46, 149, 208);
+  color: white;
+  text-align: center;
+  border-bottom: 4px solid white;
+}
+
+#icon1, #icon2, #icon3, #icon4, #icon5, #icon6 {
+	font-size: 9em;
+}
+
+.box:hover {
+	background-color: white;
+    color: rgb(46, 149, 208);
+}
+
+
+/*************************
+Media Queries
+*************************/
+
+@media only screen and (min-width: 768px) {
+
+  .title {
+    float: left;
+    font-size: 1.4em;
+  }
+
+  .grid div {
+    float: left;
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+  .wrap {
+    width: 1140px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+}
+
+/*************************
+Clearfix
+*************************/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
