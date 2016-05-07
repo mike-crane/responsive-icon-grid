@@ -1,0 +1,40 @@
+// $columns
+// Will govern the total number of columns.
+
+// $column-width
+// Will govern the width of each individual column in pixels.
+
+// $gutter
+// Will govern the width of the margin in between columns in pixels.
+
+// $padding
+// Will govern the outer padding on either side of the grid in pixels. By default I've set this figure to half of the gutter, but feel free to change this around.
+
+.container {
+	max-width: 1170px;
+	margin: 0px auto;
+	padding: 0 15px 0 15px;
+}
+
+.grid1 {
+	width: 33.3333%
+	float: left;
+	margin-left: 2.5%;
+}
+
+.grid2 {
+	width: 66.6666%
+	float: left;
+	margin-left: 2.5%;
+}
+
+.grid3 {
+	width: 100%
+	float: left;
+	margin-left: 2.5%;
+}
+
+.clear {
+	margin-left: 0px;
+	clear: left;
+}
