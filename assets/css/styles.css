@@ -1,73 +1,78 @@
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+}
 *,
-*:after,
-*:before {
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	}
-
-img {
-	width: auto;
-	max-width: 100%;
-	height: auto !important;
-	}
-
-.wrapper {
-	width: 88%;
-	margin: 0 auto;
-	margin-top: 10%;
-	margin-bottom: 10%;
-	}
-
-.wrapper:after,
-.row:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-	  }
-
-[class*='column-'] {
-	float: left;
-	/*padding: 1em;*/
-	width: 100%;
-	min-height: 1px;
-	}
-
-@media only screen and (min-width: 50em) {
-
-	.wrapper {
-			width: 88%;
-			max-width: 65em;
-			}
-
-	.column-4 {
-			width: 33.33333%;
-			}
-		}
-
-
-.row {
-    border-collapse: collapse;
-    border-style: hidden;
+*:before,
+*:after {
+    box-sizing: inherit;
 }
-
-.row .column-4, .row .column-4 {
-    border: 1px solid rgb(221, 221, 221);
+body {
+    font-family: Helvetica, Helvetica Neue, Arial;
+    font-size: 16px;
 }
-
-* {
-	color: white;
+.grid-container {
+    margin-left: .25em;
+    margin-top: 10%;
 }
-
-span {
-	display: block;
-	background: rgb(71, 163, 218);
-	/*padding: 1em 0;*/
-	text-align: center;
-	height: 30em;
+.wrap {
+    width: 90%;
+    margin: 0 auto;
 }
+.box {
+    display: inline-block;
+    padding: 3em 7.5em;
+    background-color: #EF8354;
+    color: white;
+    text-align: center;
+    border-bottom: 4px solid white;
+}
+#icon1,
+#icon2,
+#icon3,
+#icon4,
+#icon5,
+#icon6 {
+    font-size: 9em;
+}
+.box:hover {
+    background-color: #4F5D75;
+    color: #BFC0C0;
+}
+/*************************
+Media Queries
+*************************/
 
-.fa {
-padding-top: 3em;
+@media only screen and (min-width: 768px) {
+    .title {
+        float: left;
+        font-size: 1.4em;
+    }
+    .grid div {
+        float: left;
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1140px) {
+    .wrap {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    .title {
+        font-size: 2em;
+    }
+}
+/*************************
+Clearfix
+*************************/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
 }
